@@ -2,12 +2,12 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('restReview-v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        'js/main.js',
-        'js/restaurant_info.js',
-        'js/dbhelper.js',
-        'css/styles.css',
-        'data/restaurants.json',
+        '../',
+        'main.js',
+        'restaurant_info.js',
+        'dbhelper.js',
+        '../css/styles.css',
+        '../data/restaurants.json',
       ]);
     })
   );
