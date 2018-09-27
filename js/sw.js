@@ -3,11 +3,11 @@ self.addEventListener('install', function(event) {
     caches.open('restReview-v1').then(function(cache) {
       return cache.addAll([
         '/',
-        '/js/main.js',
-        '/js/restaurant_info.js',
-        '/js/dbhelper.js',
-        '/css/styles.css',
-        '/data/restaurants.json',
+        'js/main.js',
+        'js/restaurant_info.js',
+        'js/dbhelper.js',
+        'css/styles.css',
+        'data/restaurants.json',
       ]);
     })
   );
